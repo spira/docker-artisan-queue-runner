@@ -1,4 +1,4 @@
-FROM nglume/docker-artisan
+FROM spira/docker-artisan
 
 MAINTAINER "Zak Henry" <zak.henry@gmail.com>
 
