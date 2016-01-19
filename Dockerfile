@@ -11,11 +11,12 @@ RUN apt-get update && \
     build-essential \
     libpq-dev \
     libmcrypt-dev \
+    libxml2-dev \
     python-pip
 
 RUN pip install --upgrade supervisor supervisor-stdout
 
-RUN docker-php-ext-install mcrypt pdo_pgsql mbstring pdo_mysql sockets opcache
+RUN docker-php-ext-install mcrypt pdo_pgsql mbstring pdo_mysql sockets opcache soap
 
 # Configure php
 ADD config/memory.ini /opt/etc/memory.ini
