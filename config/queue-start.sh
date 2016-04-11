@@ -3,8 +3,9 @@
 #set default values for env
 export QUEUE=${QUEUE:-default}
 export TRIES=${TRIES:-3}
+export FAILDELAY=${FAILDELAY:-60}
 
-echo "Starting queue '$QUEUE' with '$TRIES' tries"
+echo "Starting queue '${QUEUE}' with '${TRIES}' tries and failed delay ${FAILDELAY}s"
 
 which supervisord
 supervisord -v
