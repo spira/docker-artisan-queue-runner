@@ -1,4 +1,4 @@
-FROM php:7.0-cli
+FROM php:7.0.13-cli
 
 MAINTAINER "Zak Henry" <zak.henry@gmail.com>
 
